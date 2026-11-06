@@ -1,0 +1,12 @@
+﻿file,kind,x,y,w,h,source,body_y0,body_y1
+mug_01.jpg,mug,388,555,210,143,14 print_boxes.csv,,
+mug_02.jpg,mug,435,276,187,128,14 print_boxes.csv,,
+mug_03.jpg,mug,189,411,154,105,14 print_boxes.csv,,
+mug_04.jpg,mug,278,327,127,87,left mug body (2 mugs),229.0,513.0
+tshirt_01.jpg,tshirt,420,192,176,120,torso (depth core),92.0,595.0
+tshirt_02.jpg,tshirt,426,237,171,117,torso (depth core),140.0,627.0
+tote_01.jpg,tote,410,344,213,146,tote body rows,207.0,627.0
+tote_02.jpg,tote,227,587,217,148,tote body rows,469.0,854.0
+tote_03.jpg,tote,254,666,143,97,tote body rows,574.0,856.0
+hoodie_01.jpg,hoodie,431,314,201,137,torso (depth core),192.0,679.0
+hoodie_02.jpg,hoodie,175,529,225,154,torso (depth core),416.0,867.0

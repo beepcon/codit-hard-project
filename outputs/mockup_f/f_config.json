@@ -1,0 +1,193 @@
+{
+ "saved_at": "2026-10-28 17:19:13",
+ "goods": [
+  {
+   "file": "mug_01.jpg",
+   "kind": "mug",
+   "site": "unsplash",
+   "page": "https://unsplash.com/photos/white-ceramic-mug-on-white-table-he_xuL-CyyI"
+  },
+  {
+   "file": "mug_02.jpg",
+   "kind": "mug",
+   "site": "unsplash",
+   "page": "https://unsplash.com/photos/a-white-coffee-mug-xf38DdLyBvI"
+  },
+  {
+   "file": "mug_03.jpg",
+   "kind": "mug",
+   "site": "unsplash",
+   "page": "https://unsplash.com/photos/white-ceramic-mug-nDd3dIkkOLo"
+  },
+  {
+   "file": "mug_04.jpg",
+   "kind": "mug",
+   "site": "pexels",
+   "page": "https://www.pexels.com/photo/plain-white-mugs-on-a-white-surface-6312177/"
+  },
+  {
+   "file": "tshirt_01.jpg",
+   "kind": "tshirt",
+   "site": "unsplash",
+   "page": "https://unsplash.com/photos/a-white-shirt-on-a-white-background-4rUYuwJ2vGw"
+  },
+  {
+   "file": "tshirt_02.jpg",
+   "kind": "tshirt",
+   "site": "unsplash",
+   "page": "https://unsplash.com/photos/a-plain-white-t-shirt-hangs-on-a-wooden-hanger-8ACmRoleM24"
+  },
+  {
+   "file": "tote_01.jpg",
+   "kind": "tote",
+   "site": "unsplash",
+   "page": "https://unsplash.com/photos/white-reusable-bag-on-gray-surface-smTDI-z1rlY"
+  },
+  {
+   "file": "tote_02.jpg",
+   "kind": "tote",
+   "site": "unsplash",
+   "page": "https://unsplash.com/photos/beige-eco-bag-1Pgq9ZpIatI"
+  },
+  {
+   "file": "tote_03.jpg",
+   "kind": "tote",
+   "site": "unsplash",
+   "page": "https://unsplash.com/photos/a-white-bag-hanging-on-a-white-door-AFCo5H6rFEE"
+  },
+  {
+   "file": "hoodie_01.jpg",
+   "kind": "hoodie",
+   "site": "unsplash",
+   "page": "https://unsplash.com/photos/white-hoodie-and-distressed-jeans-kJXGTOY1wLQ"
+  },
+  {
+   "file": "hoodie_02.jpg",
+   "kind": "hoodie",
+   "site": "pexels",
+   "page": "https://www.pexels.com/photo/a-person-holding-a-brown-hoodie-6786666/"
+  }
+ ],
+ "designs": {
+  "nai": "..\\outputs\\promo_c\\C_B0_nai_ipa_s0.png",
+  "kaykit": "..\\outputs\\promo_c\\C_B2_kaykit_ipa_s0.png",
+  "x72": "..\\outputs\\promo_c\\C_B4_x72_ipa_s0.png"
+ },
+ "max_side": 1024,
+ "print_box_rule": {
+  "tshirt": [
+   0.4,
+   0.28,
+   0.4
+  ],
+  "hoodie": [
+   0.38,
+   0.3,
+   0.38
+  ],
+  "tote": [
+   0.55,
+   0.4,
+   0.45
+  ],
+  "mug": [
+   0.6,
+   null,
+   0.45
+  ]
+ },
+ "print_box_override": {},
+ "mask_model": "ZhengPeng7/BiRefNet",
+ "seed": 0,
+ "F0": {
+  "model": "stabilityai/stable-diffusion-xl-base-1.0",
+  "ip_adapter": {
+   "repo": "h94/IP-Adapter",
+   "subfolder": "sdxl_models",
+   "weight_name": "ip-adapter_sdxl.bin"
+  },
+  "strengths": [
+   0.45,
+   0.65
+  ],
+  "ipa_scale": 0.6,
+  "steps": 30,
+  "cfg": 7.0
+ },
+ "F1": {
+  "disp_ratio": 0.02,
+  "shade_blend": 0.6,
+  "mug_half_angle_deg": 60
+ },
+ "F2": {
+  "repo": "Qwen/Qwen-Image-Edit-2509",
+  "pipeline": "QwenImageEditPlusPipeline",
+  "quantize": [
+   "transformer",
+   "text_encoder"
+  ],
+  "need_gb": 53.8,
+  "free_gb": 76.9,
+  "skip_reason": "",
+  "args": {
+   "steps": 40,
+   "extra": {
+    "true_cfg_scale": 4.0,
+    "negative_prompt": " ",
+    "guidance_scale": 1.0
+   }
+  },
+  "prompt_example": "Print the illustration from the second image on the front of the t-shirt in the first image, as a printed graphic that follows its fabric folds and lighting. Keep the t-shirt, its shape, its color and the background unchanged.",
+  "goods": [
+   "mug_01.jpg",
+   "tshirt_01.jpg",
+   "tote_01.jpg",
+   "hoodie_01.jpg"
+  ]
+ },
+ "F2p": {
+  "repo": "black-forest-labs/FLUX.1-Kontext-dev",
+  "pipeline": "FluxKontextPipeline",
+  "quantize": [
+   "transformer",
+   "text_encoder_2"
+  ],
+  "need_gb": 53.9,
+  "free_gb": 76.9,
+  "skip_reason": "",
+  "args": {
+   "steps": 28,
+   "extra": {
+    "guidance_scale": 2.5
+   }
+  },
+  "prompt_example": "Make the printed illustration look naturally printed on the t-shirt, following its fabric folds and lighting. Keep the illustration, the t-shirt, its shape and the background unchanged.",
+  "goods": [
+   "mug_01.jpg",
+   "tshirt_01.jpg",
+   "tote_01.jpg",
+   "hoodie_01.jpg"
+  ]
+ },
+ "F3": {
+  "model": "stabilityai/stable-diffusion-xl-base-1.0",
+  "strength": 0.3,
+  "steps": 30,
+  "cfg": 7.0,
+  "mask_dilate_px": 8,
+  "feather_px": 4
+ },
+ "prompt_example": "a t-shirt with a full color illustration printed on the front, product photo, realistic fabric texture",
+ "negative": "text, letters, watermark, logo, lowres, blurry, deformed",
+ "versions": {
+  "torch": "2.14.1+cu130",
+  "diffusers": "0.41.0.dev0",
+  "transformers": "5.20.1",
+  "accelerate": "1.15.0",
+  "bitsandbytes": "0.50.1",
+  "pillow": "12.3.0",
+  "numpy": "2.2.6"
+ },
+ "python": "3.12.13",
+ "gpu": "NVIDIA GeForce RTX 3090, 24576 MiB, 610.88"
+}
