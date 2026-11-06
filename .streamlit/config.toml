@@ -1,0 +1,11 @@
+# 앱 색 테마 (11/04): 상세 페이지(src/app/core/page_html.py) 기본 테마와 같은 어두운 남색 배경
+# 배경·보조 배경·글자·테두리는 page_html 기본 색(hue 0.6)의 bg·bg2·ink·line
+# 강조색(버튼)은 흰 글자와 대비 5.4:1이 되도록 같은 색상에서 진하게 함 (page_html 강조색 #89b6f9는 흰 글자와 2.1:1이라 버튼에 쓰지 않음)
+# 글자 크기는 바꾸지 않음 (11/03 글자 크기를 키우자 버튼 이름이 잘렸음)
+[theme]
+base = "dark"
+primaryColor = "#2f69bf"
+backgroundColor = "#090e16"
+secondaryBackgroundColor = "#121b28"
+textColor = "#e8f1f7"
+borderColor = "#4c6b99"

@@ -1,0 +1,14 @@
+data/raw/
+data/processed/
+models/
+outputs/
+.env
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+*.safetensors
+*.ckpt
+*.bin
+experiments/16_goods_background_relight.ipynb
